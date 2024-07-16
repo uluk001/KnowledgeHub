@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "knowledgehub"
+version = "0.1.0"
+description = ""
+authors = ["uluk001"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.36.0"
+langchain = "^0.2.8"
+prefect = "^2.19.8"
+openai = "^1.35.14"
+wikipedia-api = "^0.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
