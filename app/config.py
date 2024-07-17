@@ -13,7 +13,6 @@ class EnvironmentSettings(MainSettings):
 
 class SensitiveSettings(EnvironmentSettings):
     OPENAI_API_KEY: str = Field(..., env="OPENAI_API_KEY")
-    OPENAI_MODEL: str = Field(..., env="OPENAI_MODEL")
 
     class Config:
         env_file = ".env"
