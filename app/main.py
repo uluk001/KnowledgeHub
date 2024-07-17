@@ -1,5 +1,5 @@
 import streamlit as st
-from utils import get_wikipedia_info, get_openai_info
+from utils import get_openai_info, get_wikipedia_info
 
 st.title("Information Finder")
 st.write("Enter a word to get information from Wikipedia and OpenAI API")

@@ -1,9 +1,8 @@
+from config import APP_SETTINGS
 from langchain_community.tools import WikipediaQueryRun
 from langchain_community.utilities import WikipediaAPIWrapper
-from loguru import logger
 from langchain_openai import OpenAI
-from config import APP_SETTINGS
-
+from loguru import logger
 
 client = OpenAI(api_key=APP_SETTINGS.OPENAI_API_KEY)
 wikipedia = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())
